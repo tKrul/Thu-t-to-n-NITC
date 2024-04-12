@@ -1,8 +1,5 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-
-
 int main()
 {
    int n;
@@ -11,25 +8,23 @@ int main()
    for(int i=0;i<n;i++){
       cin>>a[i];
    }
-   int max_sum = a[0];
-   int cur_sum = a[0];
-   int start_idx = 0;
-   int end_idx = 0;
-   int cur_start_idx = 0;
-   for (int i = 1; i<n; i++) { 
-      if (cur_sum < 0) {
-         cur_sum = a[i];
-         cur_start_idx=i;
+   int max=a[0];
+   int cur=a[0];
+   int st=0;
+   int end=0;
+   int cur_i=0;
+   for(int i=1;i<n;i++){
+      if(cur<0){
+         cur=a[i];
+         cur_i=i;
       }
-      else {
-      cur_sum += a[i];
-      }
-      if (cur_sum > max_sum) {
-         max_sum = cur_sum;
-         start_idx =cur_start_idx;
-         end_idx=i;
+      else cur+=a[i];
+      if(cur>max){
+         max=cur;
+         st=cur_i;
+         end=i;
       }
    }
-   cout<<start_idx+1<<" "<<end_idx+1<<" "<<max_sum<<endl;
+   cout<<max<<" "<<st<<" "<<end<<endl;
    return 0;
 }
