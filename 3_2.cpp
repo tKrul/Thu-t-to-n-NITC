@@ -2,12 +2,8 @@
 using namespace std;
 
 vector<vector<int>> mtx(int n){
-    vector<vector<int> > a;
-    vector<int> b;
-    for(int i=0;i<n;i++)
-        b.push_back(0);
-    for(int i=0;i<n;i++)
-        a.push_back(b);
+    vector<int> b(n,0);
+    vector<vector<int> > a(n,b);
     int x=0,y=n-1,vl=0;
     while(vl<n*n){
         for(int i=x;i<=y;i++){vl++;a[x][i]=vl;}
