@@ -16,7 +16,6 @@ void enter(){
     x[1]=1;
 }
 void Try(int i){
-    cout<<bc<<endl;
     for(int j=2;j<=n;j++){
         if(vs[j]==0){
             x[i]=j;
