@@ -25,7 +25,7 @@ bool daungoac(string s){
     if(st.empty()){
         return true;
     }
-    return false;
+    return false; 
 }
 int main(){
     string s;
