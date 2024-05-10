@@ -2,7 +2,7 @@
 using namespace std;
 void hoanvidep(int n){
     if(n<=3){
-        cout<<"NO SOLUTION";
+        cout<<"NO SOLUTION"; 
         return;
     }
     else if(n==4)cout<<"3 1 4 2";
