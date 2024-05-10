@@ -2,7 +2,7 @@
 using namespace std;
 string kq(int n){
     string ans="";
-    for(int i=9;i>=2;i--){
+    for(int i=9;i>=2;i--){ 
         while(n%i==0){
             ans+=to_string(i);
             n/=i;
