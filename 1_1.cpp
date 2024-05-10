@@ -3,7 +3,7 @@ using namespace std;
 bool c[1000001];
 void snt(int n){
     for(int i=2;i<=n;i++)
-        c[i]=1;
+        c[i]=1; 
     c[0]=0;
     c[1]=0;
     for(int i=2;i*i<=n;i++){
