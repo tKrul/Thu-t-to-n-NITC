@@ -3,7 +3,7 @@ using namespace std;
 int a[101][101];
 void dem(int n,int m){
     int d=0;
-    string s = "";
+    string s = ""; 
     string k="";
     for(int i=0;i<n-1;i++){
         for(int j=0;j<m-1;j++){
