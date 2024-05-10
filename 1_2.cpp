@@ -8,7 +8,6 @@ int lastdigitzero(int  n){
         res%=10;
     }
     return res;
-
 }
 int main(){
     int n;
