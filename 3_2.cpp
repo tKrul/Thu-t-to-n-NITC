@@ -3,7 +3,7 @@ using namespace std;
 
 vector<vector<int>> mtx(int n){
     vector<int> b(n,0);
-    vector<vector<int> > a(n,b);
+    vector<vector<int> > a(n,b); 
     int x=0,y=n-1,vl=0;
     while(vl<n*n){
         for(int i=x;i<=y;i++){vl++;a[x][i]=vl;}
