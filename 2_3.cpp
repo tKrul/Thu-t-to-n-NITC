@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    string s;
+    string s; 
     getline(cin,s);
     string v="",v1="";
     for(int i=0;i<s.length();i++)
