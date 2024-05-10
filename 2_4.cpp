@@ -6,7 +6,7 @@ void xau(string s){
     for(int i=0; i<s.size(); i++){
         string h="";
         for(int j=i; j<s.size(); j++){
-            h+=s[j];
+            h+=s[j]; 
             string k=" "+h+" ";
             if(p.find(k)==string::npos){
                 d++;
